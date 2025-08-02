@@ -8,3 +8,4 @@ dependencies:
   - pyaudio
   - numpy
   - websocket-client
+  - python-dotenv

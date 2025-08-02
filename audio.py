@@ -4,13 +4,21 @@ import json
 import threading
 import time
 import wave
+import os
 from urllib.parse import urlencode
 from datetime import datetime
 
 from window_switcher import get_all_windows, lookup_command 
+# importing necessary functions from dotenv library
+from dotenv import load_dotenv, dotenv_values 
+
+
+# loading variables from .env file
+load_dotenv() 
+
 
 # --- Configuration ---
-YOUR_API_KEY = "17c26d4abb2f4e51b22586575100b522"  # Replace with your chosen API key, this is the "default" account api key
+YOUR_API_KEY = os.getenv("ASSEMBLY_AI_KEY")  # Replace with your chosen API key, this is the "default" account api key
 
 
 CONNECTION_PARAMS = {
