@@ -1,0 +1,10 @@
+name: say-switch
+channels:
+  - defaults
+dependencies:
+  - python
+  - PyWinCtl
+  - pyautogui
+  - pyaudio
+  - numpy
+  - websocket-client
